@@ -25,7 +25,7 @@ def find_greater_pair(src)
     if src[row_index][0] >= src[row_index][1]
       result << src[row_index][element_index][0]
     else
-      result << src[row_index][element_index][1]
+      result.push(src[row_index][element_index][1])
     end
     row_index += 1
   end
